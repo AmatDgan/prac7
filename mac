@@ -1,0 +1,86 @@
+a = 0
+for x in range(100, 1000):
+    if x % 17 == 0:
+        print(x)
+        a += 1
+print(a)
+
+
+x = input()
+y = ''
+for z in range(2, len(x), 3):
+    y += x[z]
+print(y)
+
+
+import math
+
+while True:
+    z = int(input('Введите число '))
+    if int(z ** (1/2)) == math.sqrt(x):
+        break
+    else:
+        pass
+print(f'Число {z} является полным квадратом')
+
+
+x = int(input())
+if x % 2 == 0:
+    b = (1 + x) * (x // 2)
+else:
+    b = (1 + x) * (x // 2) + (x + 1) // 2
+print(b)
+
+
+N = int(input())
+for x in range(1, N + 1):
+    if x ** 3 <= N:
+        print(x ** 3, end=' ')
+
+
+N = int(input())
+k = 1
+while k <= N:
+    print(k)
+    k *= 2
+
+
+x = int(input())
+a = 0
+for y in range(1, 100):
+    if 2 ** y == x:
+        a += 1
+    else:
+        pass
+if a >= 1:
+    print('верно')
+else:
+    print('неверно')
+
+
+N = int(input())
+a = 0
+while N > 1:
+    N = N / 2
+    a += 1
+print(a)
+
+
+
+N, K, R = map(int, input().split())
+a = 1
+while N < R:
+    N = N * (1 + (K / 100))
+    a += 1
+print(a)
+
+
+t = float(input())
+t1 = t
+total = 0
+while t != 0:
+    t = float(input())
+    if t1 - t > 0:
+        total += 1
+        t1 = t
+print(total)
